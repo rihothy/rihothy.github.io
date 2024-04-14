@@ -13,6 +13,16 @@
                 margin: 0;
             }
 
+            html {
+                transform-origin: top left;
+                overflow-x: hidden;
+            }
+
+            body {
+                margin-left: 2rem;
+                margin-right: 2rem;
+            }
+
             body::-webkit-scrollbar {
                 width: 0;
             }
@@ -171,11 +181,8 @@
 
         <script>
             function isMobile() {
-                const userAgent = navigator.userAgent;
-                const mobileKeywords = ['Mobile', 'Android', 'iPhone', 'iPad', 'Windows Phone'];
-                
-                for (let i = 0; i < mobileKeywords.length; i++) {
-                    if (userAgent.indexOf(mobileKeywords[i]) !== -1) {
+                for (let key of ['Mobile', 'Android', 'iPhone', 'iPad', 'Windows Phone']) {
+                    if (navigator.userAgent.indexOf(key) !== -1) {
                         return true;
                     }
                 }
@@ -185,9 +192,17 @@
 
             window.onload = (ev) => {
                 if (isMobile()) {
-                    document.documentElement.style.fontSize = `0.56em`;
+                    document.body.parentElement.style.transform = `scale(${0.00106825 * window.innerWidth - 0.00059375})`;
+                    document.body.parentElement.style.width = 'fit-content';
                 }
             };
+
+            window.onresize = (ev) => {
+                if (isMobile()) {
+                    document.body.parentElement.style.transform = `scale(${0.00106825 * window.innerWidth - 0.00059375})`;
+                    document.body.parentElement.style.width = 'fit-content';
+                }
+            }
         </script>
     </head>
 
