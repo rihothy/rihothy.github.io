@@ -29,7 +29,14 @@
 
             p {
                 margin: 0;
-                text-shadow: 0 0 0.2rem rgba(127, 127, 127, 0.5);
+                color: rgba(0, 0, 0, 0.75);
+                text-shadow: 0 0 0.2rem rgba(127, 127, 127, 0.32);
+            }
+
+            .heavy-p {
+                font-weight: 600;
+                color: rgba(0, 0, 0, 0.75);
+                text-shadow: 0 0 0.2rem rgba(127, 127, 127, 0.25);
             }
 
             li {
@@ -41,7 +48,6 @@
                 width: 50rem;
                 padding-bottom: 0.1rem;
                 margin: 0 auto;
-                /* margin-top: 2rem; */
                 margin-bottom: 2rem;
                 margin-top: 2rem;
 
@@ -62,7 +68,7 @@
             
             .container-gap {
                 width: 100%;
-                height: 2rem;
+                height: 5rem;
             }
 
             .head-container {
@@ -84,6 +90,18 @@
                 color: rgba(32, 56, 100, 1);
                 font-size: 2rem;
                 font-weight: 600;
+                text-shadow: 0 0 0.2rem rgba(32, 56, 100, 0.25);
+            }
+
+            .born-container {
+                top: 2.1rem;
+                left: 11.5rem;
+                position: absolute;
+            }
+
+            .born-container >span {
+                color: rgba(32, 56, 100, 1);
+                font-size: 1rem;
                 text-shadow: 0 0 0.2rem rgba(32, 56, 100, 0.25);
             }
 
@@ -111,7 +129,7 @@
             }
 
             .subcontact-container >span:nth-child(2) {
-                width: 4rem;
+                width: 5.9rem;
                 text-align:justify;
                 text-align-last: justify;
             }
@@ -213,6 +231,10 @@
                     <span>李洪鑫</span>
                 </div>
 
+                <div class="born-container">
+                    <span>(男 1999.7)</span>
+                </div>
+
                 <div class="contact-container">
                     <div class="subcontact-container">
                         <img src="img/wechat-icon.png">
@@ -251,17 +273,24 @@
             <div class="content-container">
                 <div class="subcontent-container">
                     <div class="subject-container">
-                        <img src="img/basic-icon.png">
-                        <span>个人信息</span>
+                        <img src="img/edu-icon.png">
+                        <span>教育经历</span>
                     </div>
 
                     <div class="subcontent">
                         <div class="title-text">
-                            <p>性别：男</p>
-                            <p>民族：汉</p>
-                            <p>籍贯：福建漳州</p>
-                            <p>生日：1999.7</p>
+                            <p>2018.9 ~ 2022.7</p>
+                            <p>厦门理工学院</p>
+                            <p>计算机科学与技术</p>
+                            <p>本科学士学位</p>
+                            <p>GPA：3.68(Top 10%)</p>
                         </div>
+
+                        <ul>
+                            <li>
+                                <p>2019 ~ 2021学年担任学院编程爱好者协会算法竞赛培训主讲师</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -277,7 +306,7 @@
                                 <p>擅长C/C++编程语言，熟悉C++的面向对象、模板、STL等，了解并掌握Modern C++的语言特性；熟练使用Python、JavaScript等编程语言</p>
                             </li>
                             <li>
-                                <p>了解常用机器学习算法的原理，具有良好的数据分析/挖掘能力；熟悉并掌握U-Net、YOLO、Faster-RCNN等图像分割/目标检测深度学习模型的构建、训练与落地；了解GAN、WGAN、CycleGAN等生成对抗网络模型；了解BERT等NLP模型；了解GCN等图神经网络模型；熟悉Tensorflow、Numpy、OpenCV等库的使用</p>
+                                <p>了解常用机器学习算法的原理，具有良好的数据分析/挖掘能力；了解BERT等NLP模型；了解GCN等图神经网络模型；熟悉Tensorflow、Numpy、OpenCV等库的使用</p>
                             </li>
                             <li>
                                 <p>了解Linux下的开发和调试；熟悉多线程多进程编程、Socket编程；了解基于OpenCL等并行计算框架的异构编程；了解Hadoop的使用</p>
@@ -294,73 +323,6 @@
 
                 <div class="subcontent-container">
                     <div class="subject-container">
-                        <img src="img/edu-icon.png">
-                        <span>教育经历</span>
-                    </div>
-
-                    <div class="subcontent">
-                        <div class="title-text">
-                            <p>2018.9 ~ 2022.7</p>
-                            <p>厦门理工学院</p>
-                            <p>计算机科学与技术(嵌入式方向)</p>
-                            <p>本科学士学位</p>
-                        </div>
-
-                        <ul>
-                            <li>
-                                <p>GPA：3.68 (Top 10%)</p>
-                            </li>
-                            <li>
-                                <p>2018 ~ 2019学年获得校“三好学生”荣誉称号</p>
-                            </li>
-                            <li>
-                                <p>2018 ~ 2021学年获得国家励志奖学金</p>
-                            </li>
-                            <li>
-                                <p>2019 ~ 2020学年担任C语言助教、高数助教</p>
-                            </li>
-                            <li>
-                                <p>2019 ~ 2021学年担任学院编程爱好者协会算法竞赛培训主讲师</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="subcontent-container">
-                    <div class="subject-container">
-                        <img src="img/practice-icon.png">
-                        <span>大学实践</span>
-                    </div>
-
-                    <div class="subcontent">
-                        <ul>
-                            <li>
-                                <p>抗屏摄图像隐水印编解码算法(校企合作项目，已落地)，基于StegaStamp变体的端到端深度学习模型训练编码器和解码器，在对加密图像/视频屏摄攻击后的解密测试中达到87%的召回率和96%的准确率</p>
-                            </li>
-                            <li>
-                                <p>基于Web的可视化深度学习框架(优秀毕业设计)，通过拖拽、点击等图形交互方式可视化地搭建神经网络模型，并支持在图形界面上对模型进行训练及部署推理(支持WebGPU加速)</p>
-                            </li>
-                            <li>
-                                <p>基于GAN的欠采磁共振图像修复(无监督学习)，基于U-Net对欠采频谱图丢失数据进行填充，在判定网络中判断原始数据还是填充生成</p>
-                            </li>
-                            <li>
-                                <p>人脸识别智能考勤系统(嵌入式课设)，人脸检测采用YOLO模型，人脸识别采用第三方云解决方案，交互界面采用Web实现</p>
-                            </li>
-                            <li>
-                                <p>STM32 F407 (CPU 168MHz、MEM 192KB) 单片机游戏机，含FlappyBird、贪吃蛇、人机黑白棋等游戏，游戏画面绘制利用双缓冲、局部缓冲、调色板等技术最大化节省硬件资源，画面传输采用DMA加速(https://www.bilibili.com/video/BV1yJ411t7ub)</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            <!-- </div>
-        </div>
-
-        <div class="container-gap"></div>
-
-        <div class="nextresume-container">
-            <div class="content-container"> -->
-                <div class="subcontent-container">
-                    <div class="subject-container">
                         <img src="img/baidu-icon.png">
                         <span>百度经历</span>
                     </div>
@@ -368,24 +330,39 @@
                     <div class="subcontent">
                         <div class="title-text">
                             <p>2021.7 ~ 2022.6</p>
-                            <p>百度</p>
-                            <p>内容策略部(百度大搜Spider解析组核心成员)</p>
-                            <p>C++研发工程师</p>
+                            <p>搜索内容技术部(大搜Spider解析组核心成员)</p>
+                            <p>策略算法工程师(全职实习)</p>
                         </div>
 
                         <ul>
                             <li>
-                                <p>全网网页数据收录：传统搜索没有对结构化网页数据的理解，为了优化搜索引擎检索及展现效果，需要对网页进行精细化解析，同时网页精细化解析的结果可以支持公司内部其他业务相关模型的数据集构建。主要工作为参与大搜Spider核心解析模块构建工作，重构网页解析系统、精细化理解网页核心高价值正文、提取业务需要的各类结构化数据。最终构建内部WebText中文数据集(800亿)，准确率和质量评估比公开数据集合提升20%，内部相关模型基于新版WebText数据集，模型Loss显著降低，同时数据支持大搜端到端优化，召回、相关性等均有提升</p>
+                                <p class="heavy-p">全网网页数据收录</p>
+                                <p><span class="heavy-p">背景：</span>传统搜索没有对结构化网页数据的理解，为了优化搜索引擎检索及其展现效果，需要对网页进行精细化解析，同时网页精细化解析的结果可以支持公司内部其他业务相关模型的数据集构建</p>
+                                <p><span class="heavy-p">主要工作：</span>参与大搜Spider核心解析模块构建工作，重构网页解析系统、精细化理解网页核心高价值正文、提取业务需要的各类结构化数据。最终构建内部WebText中文数据集(800亿)，准确率和质量评估比公开数据集合提升20%，内部相关模型基于新版WebText数据集，模型Loss显著降低，同时数据支持大搜端到端优化，召回、相关性等均有提升
+                                </p>
                             </li>
                             <li>
-                                <p>全网有价值数据收录：除网页外，其他内容载体也有应用于检索通路和模型数据集构建上的极大价值。主要工作有构建通用网页渲染交互系统，基于Chrome内核和Layout网页理解，从全网网页中提取有价值资源链接，累计提取万亿级，构建全网最大视频库(千亿)、全网音频库(5亿)、PDF/EPUB等文档资源库；基于Layout模型构建PDF/EPUB等解析模块，对文档数据进行精细化分块、分类理解，提取核心有价值正文参与模型数据集构建，产出有价值Token 10万亿级</p>
+                                <p class="heavy-p">全网有价值数据收录</p>
+                                <p><span class="heavy-p">背景：</span>除网页外，其他内容载体也有应用于检索通路和模型数据集构建上的极大价值，传统内容收录通路只擅长收录网页，在多模态资源收录上存在短板，需要构建新的收录系统，支持多模态内容收录</p>
+                                <p><span class="heavy-p">主要工作：</span>构建通用网页渲染交互系统，基于Chrome内核和Layoutlm网页理解，从全网网页中提取有价值资源链接，累计提取万亿级，构建全网最大视频库(千亿)、全网音频库(5亿)、PDF/EPUB等文档资源库；基于Layoutlm模型构建PDF/EPUB等解析模块，对文档数据进行精细化分块、分类理解，提取核心有价值正文参与模型数据集构建，产出有价值Token 10万亿级</p>
                             </li>
                             <li>
-                                <p>网页解析环路相关监控的建设：解析相关模块业务繁杂、数据吞吐量大，需要相关监控快速定位日常问题，提高团队开发效率。主要工作为负责协调QA及各方业务RD搭建环路各节点监控，大大缩短各个解析服务问题处理周期、减少事故发生频率</p>
+                                <p class="heavy-p">网页解析环路相关监控的建设</p>
+                                <p>收录解析相关模块业务繁杂、数据吞吐量大，需要相关监控快速定位日常问题，提高团队开发效率。主要工作为负责协调QA及各方业务RD搭建环路各节点监控，大大缩短各个模块问题处理周期（1day->1hour），同时熟悉了大搜内容收录完整通路</p>
                             </li>
                         </ul>
                     </div>
                 </div>
+
+
+            </div>
+        </div>
+
+        <div class="container-gap"></div>
+
+        <div class="nextresume-container">
+            <div class="content-container">
+
 
                 <div class="subcontent-container">
                     <div class="subject-container">
@@ -396,7 +373,6 @@
                     <div class="subcontent">
                         <div class="title-text">
                             <p>2022.7 ~ 至今</p>
-                            <p>网易</p>
                             <p>樱花工作室(主机动作游戏战斗组核心成员)</p>
                             <p>高级游戏研发工程师</p>
                         </div>
@@ -423,6 +399,27 @@
 
                 <div class="subcontent-container">
                     <div class="subject-container">
+                        <img src="img/practice-icon.png">
+                        <span>大学实践</span>
+                    </div>
+
+                    <div class="subcontent">
+                        <ul>
+                            <li>
+                                <p>抗屏摄图像隐水印编解码算法(校企合作项目，已落地)，基于StegaStamp变体的端到端深度学习模型训练编码器和解码器，在对加密图像/视频屏摄攻击后的解密测试中达到87%的召回率和96%的准确率</p>
+                            </li>
+                            <li>
+                                <p>基于Web的可视化深度学习框架(优秀毕业设计)，通过拖拽、点击等图形交互方式可视化地搭建神经网络模型，并支持在图形界面上对模型进行训练及部署推理(支持WebGPU加速)</p>
+                            </li>
+                            <li>
+                                <p>STM32 F407 (CPU 168MHz、MEM 192KB) 单片机游戏机，含FlappyBird、贪吃蛇、人机黑白棋等游戏，游戏画面绘制利用双缓冲、局部缓冲、调色板等技术最大化节省硬件资源，画面传输采用DMA加速(https://www.bilibili.com/video/BV1yJ411t7ub)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subcontent-container">
+                    <div class="subject-container">
                         <img src="img/awards-icon.png">
                         <span>证书奖项</span>
                     </div>
@@ -433,22 +430,13 @@
                                 <p>第十二届蓝桥杯C/C++组国赛一等奖</p>
                             </li>
                             <li>
-                                <p>第六届中国高校计算机大赛-团体程序设计天梯赛全国总决赛个人二等奖</p>
-                            </li>
-                            <li>
-                                <p>第六届中国高校计算机大赛-团体程序设计天梯赛全国总决赛团队二等奖(队长)</p>
-                            </li>
-                            <li>
-                                <p>IBM高级软件工程师证书</p>
+                                <p>第六届中国高校计算机大赛-团体程序设计天梯赛全国总决赛个人二等奖、团队二等奖(队长)</p>
                             </li>
                             <li>
                                 <p>第十届福建省程序设计大赛(CCPC)铜奖(队长)</p>
                             </li>
                             <li>
-                                <p>2019年中国大学生程序设计竞赛哈尔滨站(CCPC)优胜奖(队长)</p>
-                            </li>
-                            <li>
-                                <p>大学英语四级证书</p>
+                                <P>国家励志奖学金(Top 10%)</P>
                             </li>
                         </ul>
                     </div>
